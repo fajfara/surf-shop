@@ -1,0 +1,9 @@
+.landing{
+    height: 30rem;
+
+    & img{
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+}

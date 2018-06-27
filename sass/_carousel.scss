@@ -1,0 +1,35 @@
+.carousel{
+    max-width: 960px;
+    position: relative;
+    left: 45%;
+    transform: translateX(-40%);
+    text-align: center;
+    padding-top: 12rem;
+
+    &__title{
+        & h1{
+            font-family: $classy-font;
+            font-weight: 700;
+            font-size: 2rem;
+            font-style: italic;
+        }
+        margin-bottom: .7rem; 
+    }
+
+    &__subtitle{
+        
+        padding: .4rem 0 .4rem 0;
+        background-color: rgba($color-light-blue, .3);
+        margin: 0 auto;
+        width: 18rem;
+        transform: skewX(-30deg);
+        & h2{
+            font-family: $classy-font;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: $color-white;
+            transform: skewX(30deg);
+            
+        }
+    }
+}
