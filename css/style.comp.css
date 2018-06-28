@@ -72,7 +72,10 @@ table {
       font-family: 'Roboto';
       font-weight: 700;
       font-size: 2rem;
-      margin-right: 5rem; }
+      margin-right: 5rem;
+      background: -webkit-linear-gradient(bottom, rgba(238, 238, 238, 0.568), #0091ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .navbar__links {
     margin: auto;
     justify-content: center; }
@@ -137,3 +140,97 @@ table {
       font-style: italic;
       color: #fff;
       transform: skewX(30deg); }
+
+.itemShowcase {
+  max-width: 730px;
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  display: flex;
+  height: 25rem;
+  padding: 1rem;
+  margin-top: 15rem;
+  z-index: 1;
+  background: #ebf1f6;
+  /* Old browsers */
+  background: #00d2ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #00d2ff 0%, #00d2ff 35%, #00d2ff 35%, white 30%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #00d2ff 35%, #00d2ff 35%, white 30%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #00d2ff 0%, #00d2ff 35%, #00d2ff 35%, white 30%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2ff', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-family: "Roboto", "sans-serif"; }
+  .itemShowcase__image {
+    width: 35%;
+    z-index: 100; }
+    .itemShowcase__image img {
+      width: 17rem;
+      height: 20rem; }
+  .itemShowcase__changeImage {
+    width: 15%;
+    text-align: center;
+    z-index: 100;
+    position: relative; }
+    .itemShowcase__changeImage ul {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateY(-50%); }
+      .itemShowcase__changeImage ul li {
+        height: 2rem;
+        margin-bottom: .7rem; }
+        .itemShowcase__changeImage ul li img {
+          width: 2rem;
+          cursor: pointer; }
+          .itemShowcase__changeImage ul li img:hover {
+            border: solid 2px #00b0ff; }
+  .itemShowcase__itemDescription {
+    width: 45%;
+    z-index: 100;
+    padding-left: 3rem; }
+    .itemShowcase__itemDescription h1 {
+      font-family: "Roboto", "sans-serif";
+      font-weight: 700;
+      line-height: 1.2rem; }
+    .itemShowcase__itemDescription--starRatings {
+      margin-top: .5rem; }
+      .itemShowcase__itemDescription--starRatings .fas {
+        color: yellow; }
+      .itemShowcase__itemDescription--starRatings span {
+        font-family: "Roboto", "sans-serif";
+        font-size: .8rem; }
+    .itemShowcase__itemDescription--options {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; }
+      .itemShowcase__itemDescription--options ul li {
+        display: inline;
+        text-transform: uppercase;
+        font-size: .9rem;
+        margin-right: 1rem;
+        font-family: "Roboto", "sans-serif";
+        font-weight: 700;
+        color: rgba(17, 17, 17, 0.5); }
+        .itemShowcase__itemDescription--options ul li:first-child {
+          border-bottom: solid 4px #00b0ff;
+          color: #111111; }
+    .itemShowcase__itemDescription--description {
+      font-size: .9rem;
+      color: rgba(17, 17, 17, 0.7);
+      margin-bottom: 3rem; }
+    .itemShowcase__itemDescription--price {
+      margin-bottom: 4rem; }
+      .itemShowcase__itemDescription--price span {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-right: 2rem; }
+      .itemShowcase__itemDescription--price a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #00b0ff;
+        padding: .4rem 1rem .4rem 1rem; }
+    .itemShowcase__itemDescription--viewAll a {
+      color: #00b0ff; }

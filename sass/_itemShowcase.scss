@@ -1,0 +1,127 @@
+.itemShowcase{
+    max-width: 730px;
+    position: relative;
+    left: 52%;
+    transform: translateX(-50%);
+    display: flex;
+    height: 25rem;
+    padding: 1rem;
+    margin-top: 15rem;
+    z-index: 1;
+    background: rgb(235,241,246); /* Old browsers */
+    background: rgb(0,210,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(0,210,255,1) 0%, rgba(0,210,255,1) 35%, rgba(0,210,255,1) 35%, rgba(255,255,255,1) 30%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0,210,255,1) 0%,rgba(0,210,255,1) 35%,rgba(0,210,255,1) 35%,rgba(255,255,255,1) 30%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0,210,255,1) 0%,rgba(0,210,255,1) 35%,rgba(0,210,255,1) 35%,rgba(255,255,255,1) 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: $main-font;
+
+    &__image{
+        width: 35%;
+        z-index: 100;
+        & img{
+            width: 17rem;
+            height: 20rem;
+        }
+    }
+
+    &__changeImage{
+        width: 15%;
+        text-align: center;
+        z-index: 100;
+        position: relative;
+        & ul{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translateY(-50%);
+            & li{
+                height: 2rem;
+                margin-bottom: .7rem;
+                
+                & img{
+                    width: 2rem;
+                    cursor: pointer;
+                    &:hover{
+                        border: solid 2px $color-light-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__itemDescription{
+        width: 45%;
+        z-index: 100;
+        padding-left: 3rem;
+
+        & h1{
+            font-family: $main-font;
+            font-weight: 700;
+            line-height: 1.2rem;
+        }
+
+        &--starRatings{
+            margin-top: .5rem;
+            & .fas{
+                color: yellow;
+            }
+
+            & span{
+                font-family: $main-font;
+                font-size: .8rem;
+            }
+        }
+
+        &--options{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            & ul{
+                & li{
+                    display: inline;
+                    text-transform: uppercase;
+                    font-size: .9rem;
+                    margin-right: 1rem;
+                    font-family: $main-font;
+                    font-weight: 700;
+                    color: rgba($color-black, .5);
+                    &:first-child{
+                        border-bottom: solid 4px $color-light-blue;
+                        color: rgba($color-black, 1);
+                    }
+                    
+                }
+            }
+        }
+
+        &--description{
+            font-size: .9rem;
+            color: rgba($color-black, .7);
+            margin-bottom: 3rem;
+        }
+
+        &--price{
+            margin-bottom: 4rem;
+            & span{
+                font-weight: 700;
+                font-size: 1.4rem;
+                margin-right: 2rem;
+            }
+
+            & a{
+                text-decoration: none;
+                color: $color-white;
+                background-color: $color-light-blue;
+                padding: .4rem 1rem .4rem 1rem;
+            }
+        }
+
+        &--viewAll{
+            & a{
+                color: $color-light-blue;
+            }
+        }
+
+
+    }
+}
