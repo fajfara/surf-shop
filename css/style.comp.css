@@ -50,12 +50,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.landing {
-  height: 30rem; }
-  .landing img {
-    z-index: -1;
-    position: absolute;
-    width: 100%; }
+.landing img {
+  z-index: -1;
+  position: absolute;
+  width: 100%; }
 
 .navbar {
   display: flex;
@@ -163,7 +161,8 @@ table {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2ff', endColorstr='#ffffff',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  font-family: "Roboto", "sans-serif"; }
+  font-family: "Roboto", "sans-serif";
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .itemShowcase__image {
     width: 35%;
     z-index: 100; }
@@ -234,3 +233,72 @@ table {
         padding: .4rem 1rem .4rem 1rem; }
     .itemShowcase__itemDescription--viewAll a {
       color: #00b0ff; }
+  .itemShowcase__rightButtons {
+    position: absolute;
+    z-index: 10000;
+    left: 95%; }
+    .itemShowcase__rightButtons--arrows {
+      background-color: #f2d800;
+      text-align: center;
+      width: 3.2rem;
+      padding: .8rem;
+      font-size: 1.2rem;
+      display: flex; }
+      .itemShowcase__rightButtons--arrows a {
+        color: #fff;
+        text-decoration: none; }
+      .itemShowcase__rightButtons--arrows-buffer {
+        margin: 0 auto;
+        width: .3rem; }
+    .itemShowcase__rightButtons--numbers {
+      position: relative;
+      right: 20%;
+      background-color: #111;
+      color: #fff;
+      padding: .8rem;
+      text-align: center; }
+
+.about {
+  width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+  position: relative; }
+  .about__bgImg img {
+    width: 100%; }
+  .about__whiteBackground {
+    height: 30rem;
+    width: 45rem;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex; }
+    .about__whiteBackground--buffer {
+      width: 50%; }
+    .about__whiteBackground--text {
+      width: 50%;
+      text-align: center;
+      padding-top: 4rem;
+      padding-right: 4rem;
+      font-family: "Roboto", "sans-serif"; }
+      .about__whiteBackground--text h1 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: .5rem; }
+      .about__whiteBackground--text i {
+        padding-bottom: 1rem; }
+      .about__whiteBackground--text p {
+        text-align: left;
+        padding-bottom: 1rem;
+        line-height: 2rem;
+        font-family: "Playfair Display", "sans-serif";
+        font-style: italic; }
+      .about__whiteBackground--text a {
+        color: #00b0ff;
+        float: left; }
+  .about__video img {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    z-index: 1000; }

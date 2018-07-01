@@ -9,6 +9,7 @@ $classy-font: 'Playfair Display', 'sans-serif';
 $color-black: #111;
 $color-white: #fff;
 $color-light-blue: #00b0ff;
+$color-yellow: #f2d800;
 
 // Utilities
 .container{
@@ -30,3 +31,4 @@ $color-light-blue: #00b0ff;
 @import "navbar";
 @import "carousel";
 @import "itemShowcase";
+@import "about";

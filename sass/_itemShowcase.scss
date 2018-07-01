@@ -16,6 +16,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     font-family: $main-font;
 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
     &__image{
         width: 35%;
         z-index: 100;
@@ -120,6 +122,41 @@
             & a{
                 color: $color-light-blue;
             }
+        }
+
+
+    }
+
+    &__rightButtons{
+        position: absolute;
+        z-index: 10000;
+        left: 95%;
+
+        &--arrows{
+            background-color: $color-yellow;
+            text-align: center;
+            width: 3.2rem;
+            padding: .8rem;
+            font-size: 1.2rem;
+            display: flex;
+            
+            & a{
+                color: $color-white;
+                text-decoration: none;
+            }
+            &-buffer{
+                margin: 0 auto;
+                width: .3rem;
+            }
+        }
+
+        &--numbers{
+            position: relative;
+            right: 20%;
+            background-color: $color-black;
+            color: $color-white;
+            padding: .8rem;
+            text-align: center;
         }
 
 
