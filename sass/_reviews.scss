@@ -1,0 +1,85 @@
+.reviews{
+    width: 80%;
+    position: relative;
+    left: 45%;
+    transform: translateX(-40%);
+    padding-bottom: 10rem;
+    &__item{
+        width: 24%;
+        display: inline-block;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-family: $main-font;
+        cursor: pointer;
+        z-index: 9000;
+        transition: all .3s;
+        &:hover{
+            background-color: $color-light-blue;
+            transform: scale(1.1);
+            z-index: 10000;
+            & h1{
+                color: $color-white;
+            }
+
+            & h2{
+                color: $color-white;
+            }
+
+            & i{
+                color: $color-dark-blue;
+            }
+
+            &--location{
+                & i{
+                    color: $color-white;
+                }
+                & p{
+                    color: $color-white;
+                }
+            }
+        }
+        & h1{
+            color: $color-light-blue;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: .5rem;
+        }
+
+        & h2{
+            color: #bfbfbf;
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
+        & img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        & i{
+            font-size: 2rem;
+            color: $color-light-grey;
+            margin-bottom: .5rem;
+        }
+
+        &--location{
+            display: flex;
+            & i{
+                font-size: 1rem;
+                margin-right: .3rem;
+            }
+            & p{
+                color: $color-light-grey;
+                font-size: .9rem;
+            }
+
+            &-buffer{
+                width: 24%;
+            }
+        }
+    }
+}

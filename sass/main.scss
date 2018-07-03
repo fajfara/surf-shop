@@ -8,7 +8,9 @@ $classy-font: 'Playfair Display', 'sans-serif';
 // Colors
 $color-black: #111;
 $color-white: #fff;
+$color-light-grey: rgba(100, 100, 100, 0.527);
 $color-light-blue: #00b0ff;
+$color-dark-blue: #04577e;
 $color-yellow: #f2d800;
 
 // Utilities
@@ -32,3 +34,4 @@ $color-yellow: #f2d800;
 @import "carousel";
 @import "itemShowcase";
 @import "about";
+@import "reviews";
