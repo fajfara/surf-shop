@@ -8,7 +8,7 @@ $classy-font: 'Playfair Display', 'sans-serif';
 // Colors
 $color-black: #111;
 $color-white: #fff;
-$color-light-grey: rgba(100, 100, 100, 0.527);
+$color-light-grey: rgb(100, 100, 100);
 $color-light-blue: #00b0ff;
 $color-dark-blue: #04577e;
 $color-yellow: #f2d800;
@@ -17,6 +17,16 @@ $color-yellow: #f2d800;
 .container{
     width: 100%;
     position: relative;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -35,3 +45,4 @@ $color-yellow: #f2d800;
 @import "itemShowcase";
 @import "about";
 @import "reviews";
+@import "updates";

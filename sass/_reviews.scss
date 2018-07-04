@@ -3,11 +3,19 @@
     position: relative;
     left: 45%;
     transform: translateX(-40%);
+    padding-top: 20rem;
     padding-bottom: 10rem;
+    &__title{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: $classy-font;
+        font-size: 3rem;
+    }
+
     &__item{
         width: 24%;
         display: inline-block;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         position: relative;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -16,6 +24,7 @@
         cursor: pointer;
         z-index: 9000;
         transition: all .3s;
+        margin-top: 3rem;
         &:hover{
             background-color: $color-light-blue;
             transform: scale(1.1);
@@ -61,13 +70,13 @@
         }
 
         & i{
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: $color-light-grey;
             margin-bottom: .5rem;
         }
 
         &--location{
-            display: flex;
+            display: grid;
             & i{
                 font-size: 1rem;
                 margin-right: .3rem;
@@ -76,10 +85,8 @@
                 color: $color-light-grey;
                 font-size: .9rem;
             }
-
-            &-buffer{
-                width: 24%;
-            }
         }
     }
+
+    
 }
